@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Info personnelles</legend>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" placeholder="Votre Prénom" maxlength="20" minlength="2" id="prenom">
+            <br>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="Votre nom" maxlength="20" minlength="2" id="nom">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Votre mail" id="email">
+            <br>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" name="telephone" placeholder="Votre numéro de téléphone" id="telephone">
+            <br>
+            <label for="motDePasse">mot de passe</label>
+            <input type="password" name="motDePasse" id="motDePasse" placeholder="Ex: P@ssWo4d" maxlength="30" minlength="8">
+            <br>
+            <label for="Age">Age</label>
+            <input type="number" name="Age" id="Age" placeholder="Ex 15">
+            <br>
+            <label for="commentaire">Laissez un commentaire :</label>
+            <br>
+            <textarea name="commentaire" id="commentaire" placeholder="Laissez un commentaire" cols="70" rows="10"></textarea>
+            <br>
+            <label for="date">date de mon commentaire</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="photo">Ma photo</label>
+            <input type="file" name="photo" id="photo" accept=".png, .jpg, .gif">
+        </fieldset>
+        <fieldset>
+            <legend>Vous aimez</legend>
+            <input type="checkbox" id="html" name="html" checked>
+            <label for="html">Le HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="css">
+            <label for="css">Le CSS</label>
+            <br>
+            <input type="checkbox" id="jvs" name="jvs">
+            <label for="jvs">Le Javascript</label>
+            <br>
+            <input type="checkbox" id="nrf" name="nrf">
+            <label for="nrf">Ne rien faire</label>
+        </fieldset>
+        <fieldset>
+            <legend>Vous vous levez</legend>
+            <input type="radio" id="morning" name="morning" checked>
+            <label for="morning">Le matin</label>
+            <br>
+            <input type="radio" id="half" name="half">
+            <label for="half">Le midi</label>
+            <br>
+            <input type="radio" id="night" name="night">
+            <label for="night">Le soir</label>
+            <br>
+            <input type="radio" id="late" name="late">
+            <label for="late">En retard!</label>
+        </fieldset>
+        <fieldset>
+            <legend>Fin du formulaire</legend>
+            <label for="liste">Vous en avez assez?</label>
+            <select name="liste" id="liste">
+                <optgroup label="Team oui pitié">
+                    <option value="Option1">Oui c'est bon</option>
+                    <option value="Option2">Oui ça ira</option>
+                </optgroup>
+                <optgroup label="Team pas encore">
+                    <option value="Option3">non encore plus</option>
+                    <option value="Option4">encore une fois</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="submit"></label>
+            <input type="submit" name="submit" id="submit" value="Envoyer">
+            <label for="reset"></label>
+            <input type="reset" name="reset" id="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
